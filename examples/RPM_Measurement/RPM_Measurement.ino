@@ -34,8 +34,8 @@ Here 1000 PPR encoder has been used. It gives 1000 pulses per revolution.
 #include <Timer0.h>
 
 Timer0 mytimer;
-unsigned int count=0;
-unsigned int pulses=0;
+long count=0;
+long pulses=0;
 void setup()
 {
   mytimer.Start(6); // Prescaler set at 1024 - Frequency selected at 15.625 KHz
